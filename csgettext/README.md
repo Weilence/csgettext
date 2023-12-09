@@ -17,7 +17,8 @@ dotnet tool install -g csgettext
 ## 2. Run csgettext
 
 ```
+// Generate .pot format file
 csgettext -d <input directory> -o <output file>
+// Or generate .pot format file and merge with existing .po file
+csgettext -d <input directory> -o <output file> --languages <language code>
 ```
-
-will generate a `.pot` format file.
